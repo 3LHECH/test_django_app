@@ -20,3 +20,10 @@ The project uses **GitHub Actions** to automate the deployment pipeline:
 * **Trigger:** Every `push` to the `main` branch.
 * **Process:** Automatically builds the Docker image and authenticates via secrets.
 * **Deployment:** Pushes the latest build to [Docker Hub](https://hub.docker.com/r/leh3ch/test_django_game) as `leh3ch/test_django_game:latest`.
+
+1. **Pull and Run the image:**
+   ```bash
+   docker run -p 8000:8000 leh3ch/test_django_game:latest
+
+2. **Access the App:**
+    Open your browser and go to: http://localhost:8000
